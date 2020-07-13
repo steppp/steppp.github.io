@@ -1,26 +1,26 @@
-$content-bg-col: #fafafa;
-$nav-sep-height: 1.5rem;
+$content-bg-col: #f8f8fb;
+$nav-sep-height: 1rem;
 $content-shadow-col: rgba(200, 200, 200, 0.4);
+$regular-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+$mono-font: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 
-.current {
-  color: green;
+html {
+  font-size: 1.1em;
 }
 
 html, body, #content {
+  /*
   margin-bottom: 0px;
   padding-bottom: 0px;
   min-height: 100%;
   height: 100%;
-}
-
-html {
-  font-size: 1.3em;
-  background-color: #fff;
-  color: #111;
+  */
+  color: #211a1d;
+  background-color: $content-bg-col;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $mono-font;
   margin: 0px;
 }
 
@@ -28,48 +28,96 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* separator under navbar */
 nav::after {
-  content: "";
-  display: flex;
+  content: " ~ ";
+  display: inline-block;
   margin: 0px 5%;
   margin-top: $nav-sep-height;
-  height: 0.3rem;
+  height: 0.1rem;
   width: 100%;
-
-  background: linear-gradient(to right, $content-bg-col, #ddd 15% 85%, $content-bg-col);
-}
-
-nav a {
-  flex: 1;
   text-align: center;
-  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ccc;
+  line-height: 0.2rem;
+
+  background-image: linear-gradient(to right, $content-bg-col, #ddd 15% 45%, $content-bg-col 45% 55%, #ddd 55% 85%, $content-bg-col);
 }
 
-p {
-  font-size: 1.1rem;
-  text-align: justify;
+a {
+  font-weight: bold;
+  color: #1985a1;
+}
+
+nav > a {
+  flex: initial;
+  text-align: center;
+}
+
+nav > a:hover {
+  text-decoration: none;
+  background-color: #1985a1;
+  color: $content-bg-col;
+}
+
+nav > a.current:hover {
+  background-color: #c4d7f2;
+}
+
+nav > a:visited {
+}
+
+.current {
+  color: #c4d7f2;
 }
 
 #content {
-  background-color: $content-bg-col;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-bottom: 1rem;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: $nav-sep-height;
-
-  box-shadow: -0.1em 0px 2em $content-shadow-col, 0.1em 0px 2em $content-shadow-col; 
+  font-size: 1.1rem;
+  
+  p, li {
+    line-height: 1.3rem;
+  }
 }
 
 h1 {
+  font-family: $mono-font;
+  font-weight: normal;
   font-size: 3rem;
-  width: auto;
+  width: 100%;
   display: inline-block;
   margin-top: 0.7em;
+  margin-bottom: 0px;
+  color: #4c5c68;
+}
+
+h1::before {
+  content: "/* ";
+  color: #09bc8a;
+}
+
+h1::after {
+  content: " */";
+  float: right;
+  right: 0px;
+  top: 0px;
+  color: #09bc8a;
+  text-align: right;
+  margin-right: 0px;
+}
+
+#content img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media screen and (max-width: 1080px) {
@@ -81,6 +129,16 @@ h1 {
 @media screen and (max-width: 800px) {
   #content {
     margin: 0px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1::before {
+    content: "// ";
+  }
+
+  h1::after {
+    content: "";
   }
 }
 

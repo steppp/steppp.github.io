@@ -2,6 +2,6 @@
 title: About
 ---
 
-# About page
+# Le Me
 
 Some info about me.
