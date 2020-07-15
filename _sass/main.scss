@@ -57,12 +57,15 @@ a {
 nav > a {
   flex: initial;
   text-align: center;
+  text-decoration: none;
 }
 
-nav > a:hover {
-  text-decoration: none;
-  background-color: #1985a1;
-  color: $content-bg-col;
+nav, p {
+  a:hover {
+    text-decoration: none;
+    background-color: #1985a1;
+    color: $content-bg-col;
+  }
 }
 
 nav > a.current:hover {

@@ -18,7 +18,7 @@ that my name is Stefano, and I'm from Italy 🇮🇹.
 I love programming and everything related to PCs and things that you can run
 code on.
 I am currently studying Computer Science at UniBo (almost finished) and I have
-some experence in various tech stacks/frameworks/languages.
+some experience in various tech stacks/frameworks/languages.
 Some of these include:
 
 <ul>
