@@ -7,9 +7,15 @@ layout: default
 {{ content }}
 
 <h2>Posts</h2>
+{% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+{% if filtered_posts.size > 0 %}
 <ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
-  {% for post in filtered_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+    {% for post in filtered_posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
 </ul>
+{% else %}
+  <p>
+    Wow, so empty.
+  </p>
+{% endif %}
