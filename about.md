@@ -11,11 +11,11 @@ to check if it is ready.
 
 <p>
 If you <strong>really</strong> want to know something about me, I can tell you
-that my name is Stefano, and I'm from Italy🇮🇹.
+that my name is Stefano, and I'm from Italy 🇮🇹.
 </p>
 
 <p>
-I love programming and everything related to PCs and thigs that you can run
+I love programming and everything related to PCs and things that you can run
 code on.
 I am currently studying Computer Science at UniBo (almost finished) and I have
 some experence in various tech stacks/frameworks/languages.
@@ -38,7 +38,7 @@ Avid coffee drinker and lover of good food 🍕.
 <p>
 You can find more info in my <a href="https://www.linkedin.com/in/stefano-andriolo-6b563610b/">LinkedIn page</a>
 or see my work in my <a href="https://github.com/steppp">Github profile</a>.
-Follow me on Twitter @andri_step.
+Follow me on Twitter @<a href="https://twitter.com/andri_step">andri_step</a>.
 </p>
 
 <p>

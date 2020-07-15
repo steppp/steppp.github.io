@@ -1,11 +1,12 @@
 $content-bg-col: #f8f8fb;
 $nav-sep-height: 1rem;
 $content-shadow-col: rgba(200, 200, 200, 0.4);
-$regular-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+$regular-font: "Source Sans Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $mono-font: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 
 html {
   font-size: 1.1em;
+  font-weight: 300;
 }
 
 html, body, #content {
@@ -20,7 +21,7 @@ html, body, #content {
 }
 
 body {
-  font-family: $mono-font;
+  font-family: $regular-font;
   margin: 0px;
 }
 
@@ -41,7 +42,7 @@ nav::after {
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-family: $mono-font;
   color: #ccc;
   line-height: 0.2rem;
 
@@ -90,7 +91,6 @@ nav > a:visited {
 }
 
 h1 {
-  font-family: $mono-font;
   font-weight: normal;
   font-size: 3rem;
   width: 100%;
@@ -103,6 +103,7 @@ h1 {
 h1::before {
   content: "/* ";
   color: #09bc8a;
+  font-family: $mono-font;
 }
 
 h1::after {
@@ -113,6 +114,7 @@ h1::after {
   color: #09bc8a;
   text-align: right;
   margin-right: 0px;
+  font-family: $mono-font;
 }
 
 #content img {
