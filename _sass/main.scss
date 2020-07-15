@@ -1,4 +1,6 @@
 $content-bg-col: #f8f8fb;
+$content-bg-col-dark: #1d131e;
+
 $nav-sep-height: 1rem;
 $content-shadow-col: rgba(200, 200, 200, 0.4);
 $regular-font: "Source Sans Pro", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -10,12 +12,12 @@ html {
 }
 
 html, body, #content {
-  /*
+/*
   margin-bottom: 0px;
   padding-bottom: 0px;
   min-height: 100%;
   height: 100%;
-  */
+*/
   color: #211a1d;
   background-color: $content-bg-col;
 }
@@ -87,9 +89,15 @@ nav > a:visited {
   padding-right: 5%;
   padding-top: $nav-sep-height;
   font-size: 1.1rem;
+  color: #211a1d;
   
   p, li {
     line-height: 1.3rem;
+  }
+
+  code, td pre {
+    overflow: hidden;
+    margin: 0px;
   }
 }
 
@@ -126,6 +134,35 @@ h1::after {
   display: block;
 }
 
+.highlight {
+  padding: 0px;
+  margin: 0px;
+
+  table {
+    -webkit-border-vertical-spacing: 0px;
+  }
+
+  pre {
+    overflow: scroll;
+  }
+}
+
+.rouge-table {
+  background-color: #373438;
+}
+
+.lineno {
+  border-right: 1px solid white;
+  padding-right: 0.3rem;
+}
+
+.code {
+  padding-left: 0.3rem;
+
+  pre {
+  }
+}
+
 @media screen and (max-width: 1600px) {
   #content {
     margin: 0px 20%;
@@ -155,4 +192,23 @@ h1::after {
 }
 
 /* see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme */  
+@media (prefers-color-scheme: dark) {
+  html, body, #content {
+    color: #f1f0ea;
+    background-color: $content-bg-col-dark;
+  }
+
+  nav::after {
+    color: #534b52;
+    background-image: linear-gradient(to right, $content-bg-col-dark, #534b52 15% 45%, $content-bg-col-dark 45% 55%, #534b52 55% 85%, $content-bg-col-dark);
+  }
+
+  h1 {
+    color: #1985a1;
+  }
+
+  a {
+    color: #4c5c68;
+  }
+}
 

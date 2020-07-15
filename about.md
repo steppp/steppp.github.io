@@ -42,5 +42,26 @@ Follow me on Twitter @<a href="https://twitter.com/andri_step">andri_step</a>.
 </p>
 
 <p>
+This is the <code>CSS</code> used to show the separator under the navigation bar:
+{% highlight css linenos %}
+nav::after {
+  content: " ~ ";
+  display: inline-block;
+  margin: 0px 5%;
+  margin-top: $nav-sep-height;
+  height: 0.1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: $mono-font;
+  color: #ccc;
+  line-height: 0.2rem;
+
+  background-image: linear-gradient(to right, $content-bg-col, #ddd 15% 45%, $content-bg-col 45% 55%, #ddd 55% 85%, $content-bg-col);
+}
+{% endhighlight %}
+</p>
+
+<p>
 <strong>Thank you</strong> for visiting my page! Have a nice day!
 </p>
