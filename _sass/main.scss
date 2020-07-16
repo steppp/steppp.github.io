@@ -96,7 +96,6 @@ nav > a:visited {
   }
 
   code, td pre {
-    overflow: hidden;
     margin: 0px;
   }
 }
@@ -137,29 +136,42 @@ h1::after {
 .highlight {
   padding: 0px;
   margin: 0px;
+  width: 100%;
 
   table {
     -webkit-border-vertical-spacing: 0px;
-  }
-
-  pre {
-    overflow: scroll;
   }
 }
 
 .rouge-table {
   background-color: #373438;
+  table-layout: fixed;
+  width: 100%;
 }
 
 .lineno {
   border-right: 1px solid white;
   padding-right: 0.3rem;
+  width: intrinsic;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+}
+
+td.gutter {
+  width: intrinsic;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
 }
 
 .code {
+  width: auto;
   padding-left: 0.3rem;
+  display: block;
 
   pre {
+    overflow: scroll;
   }
 }
 

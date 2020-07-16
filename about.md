@@ -43,7 +43,7 @@ Follow me on Twitter @<a href="https://twitter.com/andri_step">andri_step</a>.
 
 <p>
 This is the <code>CSS</code> used to show the separator under the navigation bar:
-{% highlight css linenos %}
+{% highlight css %}
 nav::after {
   content: " ~ ";
   display: inline-block;
