@@ -33,7 +33,12 @@ Speaking of something else, I also like videogames, movies, rock/metal music.
 Avid coffee drinker and lover of good food 🍕.
 </p>
 
-<img src="https://live.staticflickr.com/4851/44966982075_e6a168e2cc_b.jpg" />
+<figure class="imgfigure">
+<img src="https://live.staticflickr.com/4851/44966982075_e6a168e2cc_b.jpg" alt="SpaceX docking pad"/>
+<figcaption>
+SpaceX docking pad
+</figcaption>
+</figure>
 
 <p>
 You can find more info in my <a href="https://www.linkedin.com/in/stefano-andriolo-6b563610b/">LinkedIn page</a>
@@ -61,6 +66,18 @@ nav::after {
 }
 {% endhighlight %}
 </p>
+
+Sometimes in this site you will see a paragraph like this:
+
+<p class="payattention">
+This paragraph indicates that this text is important and you should carefully read and be sure you understood what is written here.
+</p>
+
+When I will cite someone else's words, when I report something taken from another source or some particular content, it will have this style:
+
+<div class="relevant">
+This is the reported text with my custom styling. It can be used to highlight some content that could be not as crucial as the one that is contained in a paragraph with the style of the previous one.
+</div>
 
 <p>
 <strong>Thank you</strong> for visiting my page! Have a nice day!

@@ -1,5 +1,6 @@
 $content-bg-col: #f8f8fb;
 $content-bg-col-dark: #1d131e;
+$flame-col: #de541e;
 
 $nav-sep-height: 1rem;
 $content-shadow-col: rgba(200, 200, 200, 0.4);
@@ -90,6 +91,7 @@ nav > a:visited {
   padding-top: $nav-sep-height;
   font-size: 1.1rem;
   color: #211a1d;
+  z-index: -1;
   
   p, li {
     line-height: 1.3rem;
@@ -136,6 +138,16 @@ h1::after {
   display: block;
 }
 
+.imgfigure {
+  margin: 0px;
+  font-size: 0.9rem;
+
+  figcaption {
+    color: #999;
+    text-align: right;
+  }
+}
+
 .highlight {
   padding: 0px;
   margin: 0px;
@@ -146,12 +158,46 @@ h1::after {
   padding: 0.5rem;
   overflow: scroll;
   border-radius: 0.2rem;
+  overscroll-behavior-x: none;
 }
 
 .rouge-table {
   background-color: #373438;
   table-layout: fixed;
   width: 100%;
+}
+
+.payattention {
+  margin: 1em;
+  border: 0.5em solid #f9c80e;
+  padding: 1em;
+  font-weight: normal;
+}
+
+.relevant {
+/*
+  position: relative;
+  background-color: $flame-col;
+  margin: 1em;
+  padding: 0.5em;
+  z-index: 1;
+*/
+  border-left: 0.5em solid #211a1d;
+  padding: 0.1em 0px 0.1em 0.5em;
+}
+
+.relevant::before {
+/*
+  content: "";
+  position: absolute;
+  top: -1em;
+  left: -1em;
+  height: 30%;
+  width: 50%;
+  display: block;
+  background-color: white;
+  z-index: -1;
+*/
 }
 
 @media screen and (max-width: 1600px) {
@@ -206,6 +252,14 @@ h1::after {
   }
 
   #content > p > code {
+  }
+
+  .imgfigure figcaption {
+    color: #534b52;
+  }
+
+  .relevant {
+    border-left: 0.5em solid #f1f0ea;
   }
 }
 
