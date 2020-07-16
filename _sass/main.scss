@@ -94,10 +94,13 @@ nav > a:visited {
   p, li {
     line-height: 1.3rem;
   }
+}
 
-  code, td pre {
-    margin: 0px;
-  }
+#content > p > code {
+  margin: 0px;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  background-color: #373438;
 }
 
 h1 {
@@ -137,42 +140,18 @@ h1::after {
   padding: 0px;
   margin: 0px;
   width: 100%;
+}
 
-  table {
-    -webkit-border-vertical-spacing: 0px;
-  }
+.highlight > pre {
+  padding: 0.5rem;
+  overflow: scroll;
+  border-radius: 0.2rem;
 }
 
 .rouge-table {
   background-color: #373438;
   table-layout: fixed;
   width: 100%;
-}
-
-.lineno {
-  border-right: 1px solid white;
-  padding-right: 0.3rem;
-  width: intrinsic;
-  width: max-content;
-  width: -moz-max-content;
-  width: -webkit-max-content;
-}
-
-td.gutter {
-  width: intrinsic;
-  width: max-content;
-  width: -moz-max-content;
-  width: -webkit-max-content;
-}
-
-.code {
-  width: auto;
-  padding-left: 0.3rem;
-  display: block;
-
-  pre {
-    overflow: scroll;
-  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -222,5 +201,16 @@ td.gutter {
   a {
     color: #4c5c68;
   }
+
+  .highlight pre {
+  }
+
+  #content > p > code {
+  }
 }
 
+@media (prefers-color-scheme: light) {
+  #content > p > code {
+    color: #f1f0ea;
+  }
+}
