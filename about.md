@@ -1,12 +1,12 @@
 ---
 title: About
+description: This is my website. It is still under development, so come back in a few days to check if it is ready.
 ---
 
 # Le Me
 
 <p>
-This is my website. It is still under development, so come back in a few days
-to check if it is ready.
+{{ page.description }}
 </p>
 
 <p>
