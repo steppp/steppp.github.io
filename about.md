@@ -73,11 +73,11 @@ Sometimes in this site you will see a paragraph like this:
 This paragraph indicates that this text is important and you should carefully read and be sure you understood what is written here.
 </p>
 
-When I will cite someone else's words, when I report something taken from another source or some particular content, it will have this style:
+When I will quote someone else's words, when I report something taken from another source or when I want to emphasize some particular content, it will have this style:
 
-<div class="relevant">
+<blockquote>
 This is the reported text with my custom styling. It can be used to highlight some content that could be not as crucial as the one that is contained in a paragraph with the style of the previous one.
-</div>
+</blockquote>
 
 <p>
 <strong>Thank you</strong> for visiting my page! Have a nice day!
