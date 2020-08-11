@@ -44,6 +44,8 @@ SpaceX docking pad
 You can find more info in my <a href="https://www.linkedin.com/in/stefano-andriolo-6b563610b/">LinkedIn page</a>
 or see my work in my <a href="https://github.com/steppp">Github profile</a>.
 Follow me on Twitter @<a href="https://twitter.com/andri_step">andri_step</a>.
+
+If you want, don't hesitate to contact me at <a href="mailto:stefano.andriolo3@studio.unibo.it">stefano.andriolo3@studio.unibo.it</a>.
 </p>
 
 <p>
