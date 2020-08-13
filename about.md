@@ -41,11 +41,11 @@ SpaceX docking pad
 </figure>
 
 <p>
-You can find more info in my <a href="https://www.linkedin.com/in/stefanoandriolo/">LinkedIn page</a>
-or see my work in my <a href="https://github.com/steppp">Github profile</a>.
-Follow me on Twitter @<a href="https://twitter.com/andri_step">andri_step</a>.
+You can find more info in my <a href="https://www.linkedin.com/in/stefanoandriolo/" target="_blank" rel="noreferrer noopener">LinkedIn page</a>
+or see my work in my <a href="https://github.com/steppp" target="_blank" rel="noreferrer noopener">Github profile</a>.
+Follow me on Twitter @<a href="https://twitter.com/andri_step" target="_blank" rel="noreferrer noopener">andri_step</a>.
 
-If you want, don't hesitate to contact me at <a href="mailto:stefano.andriolo3@studio.unibo.it">stefano.andriolo3@studio.unibo.it</a>.
+If you want, don't hesitate to contact me at <a href="mailto:stefano.andriolo3@studio.unibo.it">stefano.an<i></i>driolo3@studio.unibo.it</a>.
 </p>
 
 <p>
