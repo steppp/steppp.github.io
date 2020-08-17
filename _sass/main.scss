@@ -83,15 +83,16 @@ nav > a:visited {
 }
 
 #content {
-  margin-left: 23%;
-  margin-right: 23%;
-  margin-bottom: 1rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 0;
   padding-top: $nav-sep-height;
+  padding-bottom: 3rem;
   font-size: 1.1rem;
   color: #211a1d;
-  z-index: -1;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
   
   p, li {
     line-height: 1.3rem;
@@ -202,21 +203,38 @@ h1::after {
 */
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+  text-align: right;
+  color: #999;
+}
+
 @media screen and (max-width: 1600px) {
   #content {
-    margin: 0px 20%;
+    margin: 0px 23%;
   }
 }
 
 @media screen and (max-width: 1200px) {
   #content {
-    margin: 0px 17%;
+    margin: 0px 20%;
   }
 }
 
 @media screen and (max-width: 800px) {
   #content {
-    margin: 0px;
+    margin: 0px 13%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    margin: 0px 5%;
   }
 }
 
